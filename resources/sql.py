@@ -1,0 +1,11 @@
+
+REGISTRO_USUARIO = "insert into usuario (nombre_usuario, contrasena, tipo_usuario_id) values('%s', '%s', %s)"
+BUSCAR_USUARIO_POR_NOMBRE = "select * from usuario where nombre_usuario = '%s'"
+CREAR_TABLA = "create table %s();"
+CHECK_TABLE_NAME = "select * from information_schema.tables where table_name='%s'"
+ALTERAR_TABLA = "alter table %s add column %s %s"
+CHECK_COLUMN_NAME = "SELECT column_name FROM information_schema.columns WHERE table_name='%s' and column_name='%s';"
+INSERTAR = "insert into %s "
+BORRAR = "delete from %s where %s = '%s'"
+ACTUALIZAR = "update %s set %s = '%s'"
+SELECCIONAR = "select %s from %s"
